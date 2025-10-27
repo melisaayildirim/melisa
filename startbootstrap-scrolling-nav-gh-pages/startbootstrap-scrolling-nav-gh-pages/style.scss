@@ -1,0 +1,149 @@
+/*!
+ * Start Bootstrap - Scrolling Nav v5.0.6 (https://startbootstrap.com/template/scrolling-nav)
+ * Copyright 2013-2023 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ * Temel Bootstrap stiline ek olarak özelleştirmeler
+ */
+
+/* ====================================
+   1. Bootstrap Değişkenleri ve Temel Ayarlar
+   ==================================== */
+:root {
+  /* Renkler */
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+  /* Font Ayarları */
+  --bs-body-font-family: 'Inter', sans-serif;
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    scroll-behavior: smooth; /* Yumuşak kaydırma */
+}
+
+/* ====================================
+   2. Navigasyon ve Header Stilleri
+   ==================================== */
+#mainNav {
+    background-color: var(--bs-dark); /* Navbar için koyu arka plan */
+    transition: background-color 0.2s ease;
+}
+
+#mainNav .navbar-brand {
+    color: var(--bs-white);
+}
+
+/* HERO SECTION (Başlık Bölümü) STİLLERİ - Resmin görünmesi için kritik */
+header.masthead {
+  /* Arka plan resminin görünmesi için boyutlandırma */
+  height: 100vh; /* Ekranın tamamını kapla */
+  min-height: 40rem; /* Mobil cihazlar için minimum yükseklik */
+  
+  /* Arka plan resim ayarları */
+  background: no-repeat center center;
+  background-color: var(--bs-gray-600); /* Resim yüklenmezse görülecek renk */
+  background-size: cover; /* Resmi alanı kaplayacak şekilde boyutlandırır */
+  position: relative;
+  
+  /* İçerik için boşluk */
+  padding-top: 5rem; 
+  padding-bottom: 5rem;
+}
+
+/* Metinlerin arka plan üzerinde daha net görünmesi için gölge */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ====================================
+   3. Bölümler (Sections) ve Bileşen Stilleri
+   ==================================== */
+
+.page-section {
+    padding: 8rem 0; /* Bölümler arası standart boşluk */
+}
+
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.section-subheading {
+    margin-bottom: 3rem;
+}
+
+/* Kart Stilleri (Hakkımızda ve Fakülteler) */
+.card {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* Kartlar üzerine gelindiğinde hafifçe yukarı kayma efekti */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Sosyal Medya Butonları (İletişim bölümü) */
+.btn-social {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem; /* İkonu ortalamak için */
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+/* ====================================
+   4. Footer Stilleri
+   ==================================== */
+
+.footer {
+    background-color: var(--bs-dark); /* Navbar ile aynı koyu arka plan */
+}
